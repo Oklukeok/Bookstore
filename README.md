@@ -2,12 +2,13 @@
 
 # Bookstore
 
-> Stage-1 : Bookstore: initialize project with components
+> Stage-2: Add Reducers & Actions (Redux)
 
 
 ## Built With
 
 -React
+-Redux
 
 ## Getting Started
 
