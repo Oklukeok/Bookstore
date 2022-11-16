@@ -2,7 +2,7 @@
 
 # Bookstore
 
-> Stage-2 : Add Reducers & Actions (Redux)
+> Stage-2: Add Reducers & Actions (Redux)
 
 
 ## Built With
