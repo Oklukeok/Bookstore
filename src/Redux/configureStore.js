@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import initialState from './books/boooks-redux.js';
-import checkStatus from './categories/categories-redux.js';
+import initialState from './books/boooks-redux';
+import checkStatus from './categories/categories-redux';
 
 // function that create a combine reducers with the function about book and categories
 const rootReducer = combineReducers({
