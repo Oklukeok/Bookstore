@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/boooks-redux';
+/*eslint-disable */import { addBook } from '../redux/books/boooks-redux';/*eslint-disable */
 
 const AddBook = () => {
   const [title, setTitle] = useState('');
