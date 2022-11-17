@@ -1,51 +1,62 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import RemoveBook from './removeBook';
 
-const BookRender = ({ title, author }) => (
-  <div className="book-container">
-    <div>
-      <ul>
-        <li>
-          <div>
-            <div className="book-data">
-              <div className="book-details">
-                <span>Action</span>
-                <span>{title}</span>
-                <span>{author}</span>
-                <div className="book-buttons-container">
-                  <button type="button">Comments</button>
-                  <span>|</span>
-                  <button type="button">Remove</button>
-                  <span>|</span>
-                  <button type="button">Edit</button>
-                </div>
-              </div>
-              <div className="progress-container">
-                <div className="graphic-progress">
-                  <div className="circular-progress" />
-                  <div className="progress-number">
-                    <span>64%</span>
-                    <span>Completed</span>
+const Book = (
+  {
+    id, title, author, completed, chapter,
+  },
+) => (
+  (
+    <div className="book-container">
+      <div>
+        <ul className="main-ul">
+          <li>
+            <div>
+              <div className="book-data">
+                <div className="book-details">
+                  <div className="book-author">
+                    <span className="action">Action</span>
+                    <span className="title">{title}</span>
+                    <span className="author">{author}</span>
+                  </div>
+                  <div className="book-buttons-container">
+                    <button className="btn-buttons" type="button">Comments</button>
+                    <span>|</span>
+                    <RemoveBook id={id} />
+                    <span>|</span>
+                    <button className="btn-buttons" type="button">Edit</button>
                   </div>
                 </div>
-                <div className="current-chapter">
-                  <span>Current Chapter</span>
-                  <span>Chapter 17</span>
-                  <button type="button">Update progress</button>
+                <div className="progress-container">
+                  <div className="graphic-progress">
+                    <div className="circular-progress" />
+                    <div className="progress-number">
+                      <span className="porcent">{completed}</span>
+                      <span className="status">Completed</span>
+                    </div>
+                  </div>
+                  <div className="current-chapter">
+                    <span className="current">Current Chapter</span>
+                    <span className="chapter">{`Chapter ${chapter}`}</span>
+                    <button className="btn-update" type="button">UPDATE PROGRESS</button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-
+  )
 );
 
-BookRender.propTypes = {
+Book.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  completed: PropTypes.string.isRequired,
+  chapter: PropTypes.string.isRequired,
 };
 
-export default BookRender;
+export default Book;
