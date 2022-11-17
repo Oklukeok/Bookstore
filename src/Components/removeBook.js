@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-/*eslint-disable */import { removeBook } from '../redux/books/boooks-redux';/*eslint-disable */
+/*eslint-disable */import { removeBook } from '../Redux/Books/boooks-redux';/*eslint-disable */
 
 const RemoveBook = (id) => {
   const dispatch = useDispatch();
