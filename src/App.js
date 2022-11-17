@@ -1,21 +1,27 @@
 import React from 'react';
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import {
+  Routes,
+  Route,
+} from 'react-router-dom';
+import { Provider } from 'react-redux';
 import NavBar from './Components/Nav';
+import Books from './Components/Books';
 import Categories from './Components/categories';
-import BooksList from './Components/Books';
+/*eslint-disable */import store from './Redux/configureStore';/*eslint-disable */
 
 function App() {
   return (
-    <div className="App">
-      <div className="header">
-        <NavBar />
+    <Provider store={store}>
+      <div className="App">
+        <div className="header">
+          <NavBar />
+        </div>
+        <Routes>
+          <Route path="/" element={<Books />} />
+          <Route path="/Categories" element={<Categories />} />
+        </Routes>
       </div>
-      <Routes>
-        <Route path="/" element={<BooksList />} />
-        <Route path="/Categories" element={<Categories />} />
-      </Routes>
-    </div>
+    </Provider>
   );
 }
 
