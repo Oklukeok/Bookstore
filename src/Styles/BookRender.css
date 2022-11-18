@@ -1,0 +1,117 @@
+.book-data {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(197, 186, 186);
+  width: 90%;
+  margin-top: 30px;
+  padding: 1%;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.book-details {
+  /* background-color: chartreuse; */
+  width: 450px;
+}
+
+.graphic-progress {
+  /* background-color: crimson; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.current-chapter {
+  /* background-color: darkgreen; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
+  width: 150px;
+}
+
+.progress-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-author {
+  display: flex;
+  flex-direction: column;
+}
+
+.action {
+  color: darkgrey;
+  font-size: 19px;
+}
+
+.title {
+  font-size: 26px;
+}
+
+.author {
+  font-size: 19px;
+}
+
+.book-buttons-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn-buttons {
+  margin-right: 10px;
+  border: none;
+  color: darkgrey;
+  background-color: white;
+  font-size: 14px;
+}
+
+.porcent {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.status {
+  margin-top: 5px;
+  font-size: 19px;
+}
+
+.current {
+  margin-top: 30px;
+  color: darkgrey;
+  font-size: 18px;
+}
+
+.chapter {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.btn-update {
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(28, 195, 236);
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.main-ul {
+  list-style-type: none;
+}
+
+.img-circle {
+  width: 50px;
+}
+
+.image {
+  margin-top: 50px;
+  margin-left: 150px;
+
+  /* background-color: aqua; */
+}

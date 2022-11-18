@@ -1,0 +1,10 @@
+.big-container {
+  margin: 70px;
+}
+
+.categories-btn {
+  background-color: rgb(51, 204, 224);
+  box-shadow: 5px 5px 5px 3px rgb(53, 189, 243);
+  border: 1px solid;
+  color: rgb(88, 86, 82);
+}

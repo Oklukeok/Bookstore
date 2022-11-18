@@ -1,0 +1,26 @@
+.logo {
+  margin-top: 3%;
+  margin-left: 3%;
+  font-size: 40px;
+  color: rgb(28, 195, 236);
+}
+
+.ul-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: 400px;
+  margin-top: -55px;
+}
+
+.link-item {
+  margin-right: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  color: darkgray;
+}
+
+.item {
+  text-decoration: none;
+  color: darkgray;
+}
