@@ -1,10 +1,17 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import Book from './BookRender';
 import AddBook from './Addbook';
+import { fetchBooks } from '../Redux/Books/boooks-redux';
 
 const Books = () => {
   const books = useSelector((state) => state.book);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
+
   return (
     <div className="main-container">
       {books.map((book) => (
@@ -13,8 +20,7 @@ const Books = () => {
           id={book.id}
           title={book.title}
           author={book.author}
-          completed={book.completed}
-          chapter={book.chapter}
+          category={book.category}
         />
       ))}
       <AddBook />

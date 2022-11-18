@@ -1,14 +1,17 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-/*eslint-disable */import { removeBook } from '../Redux/Books/boooks-redux';/*eslint-disable */
+import { fetchBooks, removeBook } from '../Redux/Books/boooks-redux';
 
 const RemoveBook = (id) => {
   const dispatch = useDispatch();
+  const index = id;
+  const convertedId = index.id;
   const onClickRemove = () => {
-    dispatch(removeBook(id));
+    dispatch(removeBook(convertedId));
+    setTimeout(() => dispatch(fetchBooks()), 500);
   };
   return (
-    <button type="button" onClick={onClickRemove}>Remove</button>
+    <button type="button" className="btn-buttons" onClick={onClickRemove} id={convertedId}>Remove</button>
   );
 };
 

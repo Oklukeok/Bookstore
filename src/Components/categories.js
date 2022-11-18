@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-/*eslint-disable */import { checkStatus } from '../Redux/Categories/categories-redux';/*eslint-disable */
+import { checkStatus } from '../Redux/Categories/categories-redux';
 
 const Categories = () => {
   const categories = useSelector((state) => state.categories);
