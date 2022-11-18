@@ -4,7 +4,7 @@ import RemoveBook from './removeBook';
 
 const Book = (
   {
-    id, title, author, completed, chapter,
+    id, title, author, category,
   },
 ) => (
   (
@@ -16,7 +16,7 @@ const Book = (
               <div className="book-data">
                 <div className="book-details">
                   <div className="book-author">
-                    <span className="action">Action</span>
+                    <span className="action">{category}</span>
                     <span className="title">{title}</span>
                     <span className="author">{author}</span>
                   </div>
@@ -32,13 +32,13 @@ const Book = (
                   <div className="graphic-progress">
                     <div className="circular-progress" />
                     <div className="progress-number">
-                      <span className="porcent">{completed}</span>
+                      <span className="porcent">52%</span>
                       <span className="status">Completed</span>
                     </div>
                   </div>
                   <div className="current-chapter">
                     <span className="current">Current Chapter</span>
-                    <span className="chapter">{`Chapter ${chapter}`}</span>
+                    <span className="chapter">Chapter 16</span>
                     <button className="btn-update" type="button">UPDATE PROGRESS</button>
                   </div>
                 </div>
@@ -55,8 +55,7 @@ Book.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  completed: PropTypes.string.isRequired,
-  chapter: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
 };
 
 export default Book;

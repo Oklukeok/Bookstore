@@ -2,7 +2,7 @@
 
 # Bookstore
 
-> Stage-3: Redux in React components
+> Stage-4: Connect to Api
 
 
 ## Built With

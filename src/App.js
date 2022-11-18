@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import NavBar from './Components/Nav';
 import Books from './Components/Books';
 import Categories from './Components/categories';
-/*eslint-disable */import store from './Redux/configureStore';/*eslint-disable */
+import store from './Redux/configureStore';
 
 function App() {
   return (
