@@ -63,7 +63,7 @@
 .btn-buttons {
   margin-right: 10px;
   border: none;
-  color: darkgrey;
+  color: #0290ff;
   background-color: white;
   font-size: 14px;
 }
@@ -93,7 +93,7 @@
 .btn-update {
   border: none;
   color: rgb(255, 255, 255);
-  background-color: rgb(28, 195, 236);
+  background-color:#0290ff;
   font-size: 15px;
   margin-top: 10px;
   padding: 5px;

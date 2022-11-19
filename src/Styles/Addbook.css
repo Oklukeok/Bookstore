@@ -12,6 +12,7 @@
 
 input {
   margin-left: 15px;
+  margin-bottom: 100px;
 }
 
 .add-book {
@@ -29,7 +30,7 @@ input {
 .btn-add-book {
   border: none;
   color: rgb(255, 255, 255);
-  background-color: rgb(28, 195, 236);
+  background-color:#0290ff;
   font-size: 11px;
   margin-top: 10px;
   padding: 15px;
