@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { addBook, fetchBooks } from '../Redux/Books/boooks-redux';
+import '../Styles/Addbook.css';
 
 const AddBook = () => {
   const [title, setTitle] = useState('');

@@ -2,7 +2,7 @@
 
 # Bookstore
 
-> Stage-4: Connect to Api
+> Stage-5: Styling
 
 
 ## Built With
